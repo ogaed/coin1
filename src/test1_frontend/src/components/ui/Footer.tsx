@@ -11,7 +11,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import ChatIcon from '@mui/icons-material/Chat';
 
-const DSTCComponent: React.FC = () => {
+const BarazaComponent: React.FC = () => {
 
   // Dark-themed footer
   const renderFooter = () => (
@@ -69,4 +69,4 @@ const DSTCComponent: React.FC = () => {
   );
 };
 
-export default DSTCComponent;
+export default BarazaComponent;

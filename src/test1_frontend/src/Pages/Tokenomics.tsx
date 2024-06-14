@@ -10,10 +10,10 @@ import {
 } from "@mui/material";
 
 const tokenomicsDetails = [
-  { title: "Total Supply", content: "1,000,000,000 DSTC" },
-  { title: "Circulating Supply", content: "500,000,000 DSTC" },
+  { title: "Total Supply", content: "1,000,000,000 Baraza" },
+  { title: "Circulating Supply", content: "500,000,000 Baraza" },
   { title: "Market Cap", content: "$500,000,000" },
-  { title: "Initial Price", content: "$0.10 per DSTC" },
+  { title: "Initial Price", content: "$0.10 per Baraza" },
   {
     title: "Allocation",
     content: "50% Mining, 30% Team, 10% Marketing, 10% Reserves",
@@ -26,14 +26,14 @@ const Tokenomics: React.FC = () => {
       <Card sx={{ background: "#1e1e1e", p: 3 }}>
         <CardContent>
           <Typography variant="h4" gutterBottom sx={{ color: "#bb86fc" }}>
-            DSTC Tokenomics
+            Baraza Tokenomics
           </Typography>
           <Typography
             variant="body1"
             gutterBottom
             sx={{ color: "#ffffff", mb: 2 }}
           >
-            Here are the details of the DSTC tokenomics:
+            Here are the details of the Baraza tokenomics:
           </Typography>
           <List>
             {tokenomicsDetails.map((item, index) => (

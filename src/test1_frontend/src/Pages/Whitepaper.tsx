@@ -88,7 +88,7 @@ const WhitePaper = () => {
                 Executive Summary ("Barazay Beginnings")
               </Typography>
               <Typography variant="body1" gutterBottom>
-                Baraza Coin (DSTC) is a memetoken that brings humor and shared experiences of embarrassment and rejection to the blockchain. By leveraging the Internet computer network, Baraza Coin aims to create a global, empathetic community through the innovative use of digital storytelling. Our mission is to turn personal mishaps into collective joy, making the blockchain as relatable and engaging as our shared human experiences.
+                Baraza Coin (Baraza) is a memetoken that brings humor and shared experiences of embarrassment and rejection to the blockchain. By leveraging the Internet computer network, Baraza Coin aims to create a global, empathetic community through the innovative use of digital storytelling. Our mission is to turn personal mishaps into collective joy, making the blockchain as relatable and engaging as our shared human experiences.
               </Typography>
             </Box>
 
@@ -147,7 +147,7 @@ const WhitePaper = () => {
               </Typography>
               <Typography variant="body1" gutterBottom>
                 <strong>Our digital home</strong><br />
-               We believe in the future of a fully decentralized Internet where all internet services run on a decentralized network. ICP is that future and it's already here. We believe anyone despite their geographical location should be able to transact on the internet freeely and engage in the digital economy without barriers from central authorities. ICP empowers everyone and we value inclucivity as DSTC community.
+               We believe in the future of a fully decentralized Internet where all internet services run on a decentralized network. ICP is that future and it's already here. We believe anyone despite their geographical location should be able to transact on the internet freeely and engage in the digital economy without barriers from central authorities. ICP empowers everyone and we value inclucivity as Baraza community.
               </Typography>
             
             </Box>
@@ -158,7 +158,7 @@ const WhitePaper = () => {
               </Typography>
               {renderTokenomics()}
               <Typography variant="body1" gutterBottom>
-                <strong>Total Supply: 50 Million DSTC</strong><br />
+                <strong>Total Supply: 50 Million Baraza</strong><br />
                 Baraza Coin's total supply of 50 million tokens ensures ample availability for a growing community while maintaining scarcity to drive value.
               </Typography>
               <Typography variant="body1" gutterBottom>

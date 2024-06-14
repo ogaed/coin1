@@ -1,7 +1,7 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import Home from "./Pages/Home";
-import DSTCComponent from "./Pages/About";
+import BarazaComponent from "./Pages/About";
 import PublishStoryComponent from "./Pages/Share";
 import BlogCardsComponent from "./Pages/Barazas";
 import ArticleComponent from "./Pages/Baraza";
@@ -40,7 +40,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<DSTCComponent />} />
+        <Route path="/about" element={<BarazaComponent />} />
         <Route path="/Share" element={<PublishStoryComponent principal={principal} setPrincipal={setPrincipal} />} />
         <Route path="/Barazas" element={<BlogCardsComponent />} />
         <Route path="/Whitepaper" element={<WhitePaper />} />

@@ -57,7 +57,7 @@ const theme = createTheme({
   },
 });
 
-const DSTCComponent: React.FC = () => {
+const BarazaComponent: React.FC = () => {
   const navigate = useNavigate();
 
   const carouselItems = [
@@ -81,7 +81,7 @@ const DSTCComponent: React.FC = () => {
   const renderTokenUtility = () => (
     <Box mt={3}>
       <Typography variant="h5" gutterBottom style={{textAlign:"center"}}>
-        DSTC Token Utility
+        Baraza Token Utility
       </Typography>
       <Carousel
         indicators={true}
@@ -194,7 +194,7 @@ const DSTCComponent: React.FC = () => {
             <Box
               component="img"
               src="./logo.jpeg"
-              alt="DSTC Coin"
+              alt="Baraza Coin"
               sx={{
                 display: "block",
                 margin: "0 auto",
@@ -207,7 +207,7 @@ const DSTCComponent: React.FC = () => {
               }}
             />
             <Typography variant="h4" gutterBottom align="center">
-              Welcome to DSTC - Baraza Coin
+              Welcome to Baraza - Baraza Coin
             </Typography>
             <Typography variant="subtitle1" gutterBottom align="center" color="textSecondary">
 Intersecting humour,storytelling and technology 
@@ -242,4 +242,4 @@ Intersecting humour,storytelling and technology
   );
 };
 
-export default DSTCComponent;
+export default BarazaComponent;

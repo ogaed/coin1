@@ -13,7 +13,7 @@ const PurchaseFriesPopup: React.FC<PurchaseFriesProps> = ({ onClose }) => {
 
   const handlePurchase = () => {
     // Implement your purchase logic here
-    console.log(`Purchasing ${amount} $DSTC`);
+    console.log(`Purchasing ${amount} $Baraza`);
   };
 
   return (
@@ -27,7 +27,7 @@ const PurchaseFriesPopup: React.FC<PurchaseFriesProps> = ({ onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl font-bold mb-4 text-center text-gray-300 font-rem">
-          Purchase $DSTC
+          Purchase $Baraza
         </h2>
         <div className="flex flex-col items-center mb-4">
           <label
@@ -51,7 +51,7 @@ const PurchaseFriesPopup: React.FC<PurchaseFriesProps> = ({ onClose }) => {
             onClick={handlePurchase}
             disabled={!amount}
           >
-            Purchase $DSTC
+            Purchase $Baraza
           </button>
         </div>
         <div className="flex justify-center">
