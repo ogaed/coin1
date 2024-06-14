@@ -13,18 +13,18 @@ import HowItWorks from "./Pages/Technical";
 const App = () => {
   const [principal, setPrincipal] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [showPurchasePopup, setShowPurchasePopup] = useState(false);
+  //const [showPurchasePopup, setShowPurchasePopup] = useState(false);
 
-  const handleConnectWallet = () => {
-    setShowPopup(true);
-  };
+  // const handleConnectWallet = () => {
+  //   setShowPopup(true);
+  // };
 
   const handleClosePopup = () => {
     setShowPopup(false);
   };
 
   const handlePurchasePopup = () => {
-    setShowPurchasePopup(true);
+   // setShowPurchasePopup(true);
   };
 
   return (
@@ -39,7 +39,7 @@ const App = () => {
       )}
 
       <Routes>
-        <Route path="/" element={<Home handleConnectWallet={handleConnectWallet} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<DSTCComponent />} />
         <Route path="/Share" element={<PublishStoryComponent principal={principal} setPrincipal={setPrincipal} />} />
         <Route path="/Barazas" element={<BlogCardsComponent />} />

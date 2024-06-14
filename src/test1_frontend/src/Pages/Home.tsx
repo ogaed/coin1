@@ -1,10 +1,10 @@
 import Navbar from "../components/ui/Navbar";
 import { Outlet } from "react-router-dom";
 interface HomeProps {
-  handleConnectWallet: () => void;
+ // handleConnectWallet: () => void;
 }
 
-const Home: React.FC<HomeProps> = ({ handleConnectWallet }) => {
+const Home: React.FC<HomeProps> = ({ }) => {
 // const Home = () => {
   return (
     <div style={{ maxWidth: "100%" }}>

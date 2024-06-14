@@ -1,18 +1,18 @@
 import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
-import { test1_backend, createActor } from "../../../declarations/test1_backend";
-import { useParams } from "react-router-dom";
-import { HttpAgent } from "@dfinity/agent";
+// import { test1_backend, createActor } from "../../../declarations/test1_backend";
+//import { useParams } from "react-router-dom";
+//import { HttpAgent } from "@dfinity/agent";
 
 const ArticleComponent: React.FC = () => {
-  const { barazacoinId } = useParams();
+  //const { barazacoinId } = useParams();
   const [barazacoin, setBarazacoins] = React.useState<any>();
-  let actor = test1_backend;
-  const agent = new HttpAgent();
-  //here you can use an env variable for actor canister ID
-  actor = createActor("avqkn-guaaa-aaaaa-qaaea-cai", {
-    agent,
-  });
+  // let actor = test1_backend;
+  // //const agent = new HttpAgent();
+  // //here you can use an env variable for actor canister ID
+  // actor = createActor("avqkn-guaaa-aaaaa-qaaea-cai", {
+  //   //agent,
+  // });
 
   async function fetchBarazacoins() {
     // let barazacoin = await actor.get_single_barazacoin(

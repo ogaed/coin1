@@ -7,18 +7,18 @@ import {
   Grid,
   Box,
 } from "@mui/material";
-import { test1_backend, createActor } from "../../../declarations/test1_backend";
-import { HttpAgent } from "@dfinity/agent";
+//import { test1_backend, createActor } from "../../../declarations/test1_backend";
+//import { HttpAgent } from "@dfinity/agent";
 import { Link } from "react-router-dom";
 
 const BlogCardsComponent: React.FC = () => {
   const [barazacoins, setBarazacoin] = React.useState<any>([]);
-  let actor = test1_backend;
-  const agent = new HttpAgent();
-  //here you can use an env variable for actor canister ID
-  actor = createActor("avqkn-guaaa-aaaaa-qaaea-cai", {
-    agent,
-  });
+//   let actor = test1_backend;
+//  // const agent = new HttpAgent();
+//   //here you can use an env variable for actor canister ID
+//   actor = createActor("avqkn-guaaa-aaaaa-qaaea-cai", {
+//    // agent,
+//   });
 
   async function fetchBarazacoin() {
     // let barazacoins = await actor.get_barazacoins();

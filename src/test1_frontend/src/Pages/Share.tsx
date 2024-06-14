@@ -10,9 +10,9 @@ import {
   Box,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { test1_backend, createActor } from "../../../declarations/test1_backend";
-import { HttpAgent } from "@dfinity/agent";
-import { useNavigate } from "react-router-dom";
+//import { test1_backend, createActor } from "../../../declarations/test1_backend";
+// import { HttpAgent } from "@dfinity/agent";
+// import { useNavigate } from "react-router-dom";
 
 
 const darkTheme = createTheme({
@@ -65,20 +65,20 @@ interface ComponentProps {
 
 const PublishStoryComponent: React.FC<ComponentProps> = ({  }) => {
 // const PublishStoryComponent: React.FC = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
-  let actor = test1_backend;
-  const agent = new HttpAgent();
-  //the id here is local one
-  actor = createActor("avqkn-guaaa-aaaaa-qaaea-cai", {
-    agent,
-  });
+//   let actor = test1_backend;
+//  // const agent = new HttpAgent();
+//   //the id here is local one
+//   actor = createActor("avqkn-guaaa-aaaaa-qaaea-cai", {
+//   //  agent,
+//   });
   const [title, setTitle] = useState("");
   const [story, setStory] = useState("");
 
   const handlePublish = async () => {
-    let story_no_lines = story.replace(/\r?\n|\r/g, " ");
-    let words = story_no_lines.split(" ");
+    // let story_no_lines = story.replace(/\r?\n|\r/g, " ");
+    // let words = story_no_lines.split(" ");
 
     // let res = await actor.publish_dust(words, title);
 
