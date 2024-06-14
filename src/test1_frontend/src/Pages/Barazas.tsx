@@ -21,8 +21,8 @@ const BlogCardsComponent: React.FC = () => {
   });
 
   async function fetchBarazacoin() {
-    let barazacoins = await actor.get_barazacoins();
-    return barazacoins;
+    // let barazacoins = await actor.get_barazacoins();
+    // return barazacoins;
   }
   React.useEffect(() => {
     async function fetchData() {

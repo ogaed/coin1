@@ -15,9 +15,9 @@ const ArticleComponent: React.FC = () => {
   });
 
   async function fetchBarazacoins() {
-    let barazacoin = await actor.get_single_barazacoin(
-      parseInt(barazacoinId as string) as unknown as bigint
-    );
+    // let barazacoin = await actor.get_single_barazacoin(
+    //   parseInt(barazacoinId as string) as unknown as bigint
+    // );
 
     return barazacoin;
   }

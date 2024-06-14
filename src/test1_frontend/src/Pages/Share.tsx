@@ -1,5 +1,5 @@
-//import  { useState } from "react";
-import React, { useState } from "react";
+
+import React,  { useState, Dispatch, SetStateAction } from "react";
 import {
   Container,
   TextField,
@@ -13,6 +13,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { test1_backend, createActor } from "../../../declarations/test1_backend";
 import { HttpAgent } from "@dfinity/agent";
 import { useNavigate } from "react-router-dom";
+
 
 const darkTheme = createTheme({
   palette: {
@@ -57,8 +58,13 @@ const darkTheme = createTheme({
     },
   },
 });
+interface ComponentProps {
+  principal: string;
+  setPrincipal: Dispatch<SetStateAction<string>>;
+}
 
-const PublishStoryComponent: React.FC = () => {
+const PublishStoryComponent: React.FC<ComponentProps> = ({  }) => {
+// const PublishStoryComponent: React.FC = () => {
   const navigate = useNavigate();
 
   let actor = test1_backend;
@@ -74,14 +80,14 @@ const PublishStoryComponent: React.FC = () => {
     let story_no_lines = story.replace(/\r?\n|\r/g, " ");
     let words = story_no_lines.split(" ");
 
-    let res = await actor.publish_barazacoin(words, title);
+    // let res = await actor.publish_dust(words, title);
 
-    if (res.length > 0) {
-      alert("Succesfully published a barazacoin");
-      navigate("/");
-    } else {
-      alert("Could not publish a barazacoin");
-    }
+    // if (res.length > 0) {
+    //   alert("Succesfully published a barazacoin");
+    //   navigate("/");
+    // } else {
+    //   alert("Could not publish a barazacoin");
+    // }
   };
 
   return (
