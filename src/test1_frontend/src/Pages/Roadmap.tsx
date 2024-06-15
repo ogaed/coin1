@@ -10,6 +10,7 @@ import {
   createTheme,
 } from '@mui/material';
 import { EventAvailable } from '@mui/icons-material';
+import Navbar from "../components/ui/Navbar";
 
 // Custom theme for a sleek look
 const theme = createTheme({
@@ -78,8 +79,11 @@ const roadmapItems = [
 
 const Roadmap: React.FC = () => {
   return (
+    
     <ThemeProvider theme={theme}>
+        <Navbar />
       <Container sx={{ mt: 4 }}>
+    
         <Typography variant="h4" gutterBottom align="center" color="primary">
           Our Roadmap
         </Typography>

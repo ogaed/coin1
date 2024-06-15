@@ -9,6 +9,8 @@ import WalletPopup from "./components/Wallet";
 import WhitePaper from "./Pages/Whitepaper";
 import Roadmap from "./Pages/Roadmap";
 import HowItWorks from "./Pages/Technical";
+import Tokenomics from "./Pages/Tokenomics";
+
 
 const App = () => {
   const [principal, setPrincipal] = useState("");
@@ -39,13 +41,14 @@ const App = () => {
       )}
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<BarazaComponent />} />
+        <Route path="/" element={<Roadmap />} />
+        <Route path="/Barazacoin" element={<BarazaComponent />} />
         <Route path="/Share" element={<PublishStoryComponent principal={principal} setPrincipal={setPrincipal} />} />
         <Route path="/Barazas" element={<BlogCardsComponent />} />
         <Route path="/Whitepaper" element={<WhitePaper />} />
-        <Route path="/Roadmap" element={<Roadmap />} />
+        <Route path="/Roadmap" element={<Home />} />
         <Route path="/How it works" element={<HowItWorks />} />
+        <Route path="/Tokenomics" element={<Tokenomics />} />
         <Route path="/Barazas/:barazaId" element={<ArticleComponent />} />
       </Routes>
     </BrowserRouter>

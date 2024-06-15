@@ -8,6 +8,7 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
+import Navbar from "../components/ui/Navbar";
 
 const tokenomicsDetails = [
   { title: "Total Supply", content: "1,000,000,000 Baraza" },
@@ -22,7 +23,9 @@ const tokenomicsDetails = [
 
 const Tokenomics: React.FC = () => {
   return (
+    
     <Container sx={{ mt: 4, width: "100vw", color: "#ffffff" }}>
+      <Navbar/>
       <Card sx={{ background: "#1e1e1e", p: 3 }}>
         <CardContent>
           <Typography variant="h4" gutterBottom sx={{ color: "#bb86fc" }}>

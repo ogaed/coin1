@@ -10,6 +10,7 @@ import {
   Box,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Navbar from "../components/ui/Navbar";
 //import { test1_backend, createActor } from "../../../declarations/test1_backend";
 // import { HttpAgent } from "@dfinity/agent";
 // import { useNavigate } from "react-router-dom";
@@ -92,6 +93,7 @@ const PublishStoryComponent: React.FC<ComponentProps> = ({  }) => {
 
   return (
     <ThemeProvider theme={darkTheme}>
+      <Navbar/>
       <Container maxWidth="sm" sx={{ mt: 4 }}>
         <Card variant="outlined" sx={{ p: 3 }}>
           <CardContent>

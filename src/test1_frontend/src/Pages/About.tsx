@@ -11,6 +11,7 @@ import {
   createTheme,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/ui/Navbar";
 import Carousel from "react-material-ui-carousel";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import StarIcon from '@mui/icons-material/Star';
@@ -27,7 +28,7 @@ const theme = createTheme({
       main: '#ff4081', // Neon Pink
     },
     background: {
-      default: '#1a1a1a', // Dark Background
+      default: '#fff000', // Dark Background
       paper: '#212121', // Darker Card Background
     },
     text: {
@@ -79,7 +80,9 @@ const BarazaComponent: React.FC = () => {
   ];
 
   const renderTokenUtility = () => (
+    
     <Box mt={3}>
+      
       <Typography variant="h5" gutterBottom style={{textAlign:"center"}}>
         Baraza Token Utility
       </Typography>
@@ -107,22 +110,23 @@ const BarazaComponent: React.FC = () => {
 
   const whitePaperSections = [
     {
-      title: "Barazaing off unfair life moments",
-      content: "Seeing Baraza is a metaphor for an unfair moment in life when you did something embarassing or got rejected by the person you thought was the love of your life. This is a universal human experience and everyone has had 'Baraza moments'"
+      title: "Baraza: Gathering Wisdom in Life's Unfair Moments",
+      content: "Baraza embodies those unfair moments in life when embarrassment strikes or rejection hits unexpectedly. It symbolizes a universal human experience where individuals share their 'Baraza moments', finding solace and wisdom in communal understanding."
     },
     {
-      title: "Turn Baraza into content",
-      content: "Have that cringy poem you wrote for your crush who rejected you? Share with the community. Share any embarassing moments you've had in the past or present or that you anticipate to have 😂"
+      title: "Turn Baraza into Shared Content",
+      content: "Transform your cringy poems or embarrassing stories into shared community content. Whether reminiscing about past mishaps or anticipating future blunders 😂, Baraza is the place to connect and resonate with others."
     },
     {
-      title: "The Baraza platform",
-      content: "On this platform, users can publish their stories, interact with content by liking, commenting, and sharing, and earn Baraza Coins. "
+      title: "The Baraza Platform: A Gathering Place for Stories",
+      content: "On the Baraza platform, users publish personal narratives, engage through likes, comments, and shares, and earn Baraza Coins. It fosters a community where wisdom and humor intersect, enriching interactions and rewarding participation."
     },
     {
-      title: "Who Will Use the Token",
-      content: "Baraza Coin will be used by content creators, readers, and anyone who enjoys engaging with funny and relatable content. The token incentivizes participation and fosters a supportive and entertaining community. Influencers, comedians, and storytellers will find Baraza Coin particularly appealing as it offers a unique way to monetize their content and connect with their audience. Furthermore, brands and advertisers can leverage Baraza Coin to engage with a highly interactive and engaged user base, creating innovative marketing campaigns that resonate with the community."
-    },
+      title: "Who Will Utilize Baraza Coin?",
+      content: "Baraza Coin serves content creators, avid readers, and enthusiasts of humorous and relatable content. It incentivizes active engagement, making it ideal for influencers, comedians, and storytellers seeking to monetize their creativity and connect authentically. Brands and advertisers can leverage Baraza Coin to engage with a vibrant, interactive user base, crafting innovative campaigns that resonate deeply within the community."
+    }
   ];
+  
 
   const tokenomicsData = [
     { name: 'Community Rewards', value: 40, color: theme.palette.primary.main },
@@ -134,6 +138,7 @@ const BarazaComponent: React.FC = () => {
 
   const renderWhitePaper = () => (
     <Box mt={5}>
+
       <Typography variant="h4" gutterBottom align="center" color="primary">
      About Baraza coin
       </Typography>
@@ -188,12 +193,14 @@ const BarazaComponent: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
+        <Navbar />
       <Container sx={{ mt: 4 }}>
         <Card sx={{ p: 4, background: theme.palette.background.paper, borderRadius: 2, boxShadow: 'none' }}>
           <CardContent>
+        
             <Box
               component="img"
-              src="./logo.jpeg"
+              src="./logo.jpg"
               alt="Baraza Coin"
               sx={{
                 display: "block",
@@ -214,7 +221,7 @@ Intersecting humour,storytelling and technology
             </Typography>
             <Box mt={2} mb={2} textAlign="center">
               <Typography variant="h6" gutterBottom>
-             Let's all laugh about our past embarrasing moments
+             Let's all gather and share wisdom
               </Typography>
            
             </Box>
