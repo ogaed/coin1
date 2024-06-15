@@ -22,10 +22,10 @@ import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recha
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#00bcd4', // Neon Cyan
+      main: '#fff000', // Neon Cyan
     },
     secondary: {
-      main: '#ff4081', // Neon Pink
+      main: '#ff0000', // Neon Pink
     },
     background: {
       default: '#fff000', // Dark Background
