@@ -50,7 +50,7 @@ const BlogCardsComponent: React.FC = () => {
                   <Typography
                     variant="h5"
                     gutterBottom
-                    sx={{ color: "#bb86fc" }}
+                    sx={{ color: "#fff001" }}
                   >
                     {post.title}
                   </Typography>

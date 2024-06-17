@@ -16,7 +16,7 @@ import Navbar from "../components/ui/Navbar";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#00bcd4', // Neon Cyan
+      main: '#fff001', // Neon Cyan
     },
     secondary: {
       main: '#ff4081', // Neon Pink

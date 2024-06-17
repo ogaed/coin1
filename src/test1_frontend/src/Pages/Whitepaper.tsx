@@ -14,7 +14,7 @@ import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, Legend } from 'recha
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#00bcd4',
+      main: '#fff001',
     },
     secondary: {
       main: '#ff4081',
@@ -43,7 +43,7 @@ const theme = createTheme({
 });
 
 const tokenomicsData = [
-  { name: 'Community Rewards', value: 50, color: '#00bcd4' },
+  { name: 'Community Rewards', value: 50, color: '#fff001' },
   { name: 'Development Fund', value: 20, color: '#ff4081' },
   { name: 'Marketing', value: 15, color: '#00e676' },
   { name: 'Team', value: 10, color: '#ff9100' },

@@ -40,7 +40,7 @@ const theme = createTheme({
     fontFamily: 'Orbitron, sans-serif', // Sci-fi styled font
     h4: {
       fontWeight: 700,
-      color: '#00bcd4', // Neon Cyan
+      color: '#fff001', // Neon Cyan
    
     },
     h5: {

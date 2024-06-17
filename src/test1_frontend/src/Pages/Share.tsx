@@ -20,7 +20,7 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#bb86fc",
+      main: "#fff001",
     },
     background: {
       default: "#121212",
@@ -39,20 +39,20 @@ const darkTheme = createTheme({
         root: {
           "& .MuiOutlinedInput-root": {
             "& fieldset": {
-              borderColor: "#bb86fc",
+              borderColor: "#fff001",
             },
             "&:hover fieldset": {
-              borderColor: "#bb86fc",
+              borderColor: "#fff001",
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#bb86fc",
+              borderColor: "#fff001",
             },
           },
           "& .MuiInputLabel-root": {
-            color: "#bb86fc",
+            color: "#fff001",
           },
           "& .MuiInputLabel-root.Mui-focused": {
-            color: "#bb86fc",
+            color: "#fff001",
           },
         },
       },

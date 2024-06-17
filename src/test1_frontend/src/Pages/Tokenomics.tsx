@@ -28,7 +28,7 @@ const Tokenomics: React.FC = () => {
       <Navbar/>
       <Card sx={{ background: "#1e1e1e", p: 3 }}>
         <CardContent>
-          <Typography variant="h4" gutterBottom sx={{ color: "#bb86fc" }}>
+          <Typography variant="h4" gutterBottom sx={{ color: "#fff001" }}>
             Baraza Tokenomics
           </Typography>
           <Typography
@@ -40,10 +40,10 @@ const Tokenomics: React.FC = () => {
           </Typography>
           <List>
             {tokenomicsDetails.map((item, index) => (
-              <ListItem key={index} sx={{ borderBottom: "1px solid #bb86fc" }}>
+              <ListItem key={index} sx={{ borderBottom: "1px solid #fff001" }}>
                 <ListItemText
                   primary={
-                    <Typography variant="h6" sx={{ color: "#bb86fc" }}>
+                    <Typography variant="h6" sx={{ color: "#fff001" }}>
                       {item.title}
                     </Typography>
                   }

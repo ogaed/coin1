@@ -49,7 +49,7 @@ function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "#bb86fc",
+              color: "#fff001",
               textDecoration: "none",
             }}
           >
@@ -87,7 +87,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{ color: "#bb86fc" }}>
+                  <Typography textAlign="center" sx={{ color: "#fff001" }}>
                     {page}
                   </Typography>
                 </MenuItem>
@@ -107,7 +107,7 @@ function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "#bb86fc",
+              color: "#fff001",
               textDecoration: "none",
             }}
           >
@@ -152,7 +152,7 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center" sx={{ color: "#bb86fc" }}>
+                  <Typography textAlign="center" sx={{ color: "#fff001" }}>
                     {setting}
                   </Typography>
                 </MenuItem>

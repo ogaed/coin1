@@ -36,7 +36,7 @@ const ArticleComponent: React.FC = () => {
     <Container sx={{ mt: 4, width: "100vw", color: "#ffffff" }}>
       <Card sx={{ p: 3, background: "#1e1e1e" }}>
         <CardContent>
-          <Typography variant="h4" gutterBottom sx={{ color: "#bb86fc" }}>
+          <Typography variant="h4" gutterBottom sx={{ color: "#fff001" }}>
             {barazacoin?.title}
           </Typography>
           <Box mt={2}>
